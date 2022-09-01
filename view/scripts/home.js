@@ -2,6 +2,7 @@ $(document).ready(function () {
     const user = localStorage.getItem("user");
     if (user === null) {
         $("#logout_content").show();
+        $("#logout_global").show();
     } else {
         const json_user = JSON.parse(user);
         const data = {
@@ -13,14 +14,12 @@ $(document).ready(function () {
             response = JSON.parse(response);
             if (response["status"] === 200) {
                 $("#login_content").show();
-                $(".globalCont").hide();
+                $(".globalCont").css("display", "none");
             } else {
                 $("#logout_content").show();
+                $("#logout_global").show();
             }
-
-
         });
-
     }
 
     $(document).ready(function () {
@@ -87,46 +86,87 @@ $(document).ready(function () {
     $(".fa-home").click(function () {
         $(this).css("borderBottom", "3px solid blue")
         $(this).css("color", "blue");
-        $(".fa-circle-user").css({"borderBottom": "", "color": ""});
-        $(".fa-bell").css({"borderBottom": "", "color": ""});
-        $(".fa-envelope").css({"borderBottom": "", "color": ""});
+        $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
+        $(".fa-bell").css({ "borderBottom": "", "color": "" });
+        $(".fa-envelope").css({ "borderBottom": "", "color": "" });
 
     });
 
     $(".fa-circle-user").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
-        $(".fa-home").css({"borderBottom": "", "color": ""});
-        $(".fa-bell").css({"borderBottom": "", "color": ""});
-        $(".fa-envelope").css({"borderBottom": "", "color": ""});
+        $(".fa-home").css({ "borderBottom": "", "color": "" });
+        $(".fa-bell").css({ "borderBottom": "", "color": "" });
+        $(".fa-envelope").css({ "borderBottom": "", "color": "" });
     });
 
     $(".fa-bell").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
-        $(".fa-circle-user").css({"borderBottom": "", "color": ""});
-        $(".fa-home").css({"borderBottom": "", "color": ""});
-        $(".fa-envelope").css({"borderBottom": "", "color": ""});
+        $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
+        $(".fa-home").css({ "borderBottom": "", "color": "" });
+        $(".fa-envelope").css({ "borderBottom": "", "color": "" });
     });
 
     $(".fa-envelope").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
-        $(".fa-circle-user").css({"borderBottom": "", "color": ""});
-        $(".fa-bell").css({"borderBottom": "", "color": ""});
-        $(".fa-home").css({"borderBottom": "", "color": ""});
+        $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
+        $(".fa-bell").css({ "borderBottom": "", "color": "" });
+        $(".fa-home").css({ "borderBottom": "", "color": "" });
     });
 
     $(".iconsCont i").hover(function () {
         $(this).css("background-color", "rgb(236, 236, 236)");
         $(this).css("borderRadius", "9px 9px 0 0");
 
-    }, function() {
+    }, function () {
         $(this).css("background-color", "");
         $(this).css("borderRadius", "");
 
     });
 
+
+    $(".fa-envelope").click(function () {
+        window.location.href = "/view/messages.php";
+
+    });
+
+    // $(".fa-home").click(function () {
+    //     window.location.href = "/view/home.php";
+
+    // });
+
+    // if (window.location.href.indexOf("messages.php")) {
+    //     // $(this).css("borderBottom", "3px solid blue")
+    //     // $(this).css("color", "blue");
+
+    //     $(".fa-envelope").click(function () {
+    //         window.location.href = "/view/home.php";
+
+    //     });
+    // }
+
+    $(document).ready(function () {
+        if (window.location.href.indexOf("/view/messages.php")) {
+            $(".fa-home").click(function () {
+                window.location.href = "/view/home.php";
+            });
+        }
+
+        if (window.location.href.indexOf("/view/home.php")) {
+            $(".fa-envelope").css("borderBottom", "")
+            $(".fa-envelope").css("color", "");
+            $(".fa-home").css("borderBottom", "3px solid blue")
+            $(".fa-home").css("color", "blue");
+        }
+
+        if (window.location.href.indexOf("/view/messages.php")) {
+            $(".fa-home").css("borderBottom", "")
+            $(".fa-home").css("color", "");
+        }
+
+    });
 
 
 });

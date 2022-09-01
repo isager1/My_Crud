@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="globalCont">
+    <div id="logout_global" class="globalCont" style="display:none;">
         <div class="logoCont">
             <h1>teptar<span>.</span></h1>
             <p>avec <span>teptar</span>, partagez et restez en <br> contact avec votre entourage.</p>
@@ -50,7 +50,7 @@
             </div>
             <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>
         </div>
-        
+
         <div class="bodyCont">
             <div class="firstCont">
                 <div class="personalCont">
@@ -70,6 +70,9 @@
                         <h4>Creer une story</h4>
                         <p>Partagez une photo ou un message.</p>
                     </div>
+                </div>
+                <div class="messageCont">
+
                 </div>
             </div>
             <div class="thirdCont">
