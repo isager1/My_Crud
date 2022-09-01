@@ -282,8 +282,9 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(248, 248, 248);
-  box-shadow: 0 2px 8px 0 rgb(218, 218, 218);
+  box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
   padding: 15px;
+  height: 60px;
 }
 .grandCont .panelCont h1 {
   margin: 10px;
@@ -312,249 +313,97 @@ a {
   padding: 10px;
   flex-direction: row;
 }
-
-.firstCont {
-  width: 20%;
-  padding: 50px;
+.grandCont .bodyCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.firstCont h3 {
+.grandCont .bodyCont .firstCont .personalCont {
+  display: flex;
+  margin: 10px;
   padding: 10px;
   cursor: pointer;
-  width: 210px;
 }
-.firstCont h3:hover {
-  background-color: rgba(128, 128, 128, 0.205);
-  border-radius: 30px;
+.grandCont .bodyCont .firstCont .personalCont:hover {
+  background-color: rgb(224, 224, 224);
+  border-radius: 9px;
 }
-.firstCont .popTweet {
-  padding: 15px;
-  background-color: rgb(0, 153, 255);
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  border-radius: 30px;
-  text-align: center;
-  cursor: pointer;
-  width: 200px;
-}
-.firstCont .popTweet:hover {
-  background-color: blue;
-}
-.firstCont .logOut {
-  margin-top: 200px;
-  width: 100px;
-  text-align: center;
-  cursor: pointer;
-}
-.firstCont .logOut p {
-  background-color: rgb(0, 153, 255);
-  padding: 15px;
-  border-radius: 20px;
-  color: white;
+.grandCont .bodyCont .firstCont .personalCont #nameTwo {
+  margin-left: 10px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
-.firstCont .logOut p:hover {
-  background-color: red;
+.grandCont .bodyCont .firstCont .personalCont #email {
+  margin-left: 10px;
 }
-
-.secondCont {
-  border-left: 1px solid rgba(0, 0, 0, 0.13);
-  border-right: 1px solid rgba(0, 0, 0, 0.13);
-  width: 30%;
-  padding: 50px;
-}
-.secondCont a {
-  color: black;
-}
-.secondCont .twitInput {
-  padding: 30px;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
-  width: 500px;
-  font-size: 1.3em;
-}
-.secondCont .twitInput::-moz-placeholder {
-  color: gray;
-  font-size: 1.2em;
-}
-.secondCont .twitInput:-ms-input-placeholder {
-  color: gray;
-  font-size: 1.2em;
-}
-.secondCont .twitInput::placeholder {
-  color: gray;
-  font-size: 1.2em;
-}
-.secondCont .btn-tweet {
-  padding: 10px;
-  border: none;
-  border-radius: 30px;
-  background-color: rgb(0, 153, 255);
-  color: white;
-  font-weight: bold;
-  font-size: 1.1em;
-  cursor: pointer;
-  float: right;
-}
-.secondCont .btn-tweet:hover {
-  background-color: blue;
-}
-
-.thirdCont {
-  width: 20%;
-  padding: 50px;
-}
-.thirdCont #search {
-  border-radius: 30px;
-  width: 370px;
-  border: none;
-  outline: none;
-  padding: 15px;
-  background-color: rgba(128, 128, 128, 0.123);
-  font-size: 1em;
-}
-.thirdCont #back_result {
-  padding: 10px;
-  width: 370px;
-  margin: 0 auto;
-  box-shadow: 0 6px 10px 0 gray;
-  display: none;
-  overflow: scroll;
-  height: 600px;
-  border-radius: 10px;
-}
-.thirdCont #pic {
-  vertical-align: middle;
-}
-.thirdCont #user {
-  margin: 5px;
-}
-.thirdCont #user img {
+.grandCont .bodyCont .firstCont .personalCont #avatar img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0 2px 6px 0 gray;
 }
-.thirdCont .newsBlock {
-  background-color: rgba(128, 128, 128, 0.082);
-  border-radius: 20px;
-  width: 320px;
-  padding: 25px;
-  margin-top: 20px;
-}
-.thirdCont .newsBlock p {
-  font-size: 0.8em;
-  margin-top: -5px;
-}
-.thirdCont .newsBlock h4 {
-  margin-bottom: 10px;
-}
-.thirdCont .newsBlock .newsOne {
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-}
-.thirdCont .newsBlock .newsOne:hover {
-  background-color: rgba(128, 128, 128, 0.096);
-}
-.thirdCont .newsBlock span {
-  float: right;
-  font-size: 1.6em;
-  padding: 10px;
-  height: 20px;
-  width: 20px;
-}
-.thirdCont .newsBlock span:hover {
-  background-color: rgba(173, 173, 173, 0.288);
-  border-radius: 50%;
-}
-.thirdCont .newsBlock .newsTwo {
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-}
-.thirdCont .newsBlock .newsTwo:hover {
-  background-color: rgba(128, 128, 128, 0.096);
-}
-.thirdCont .newsBlock .newsThree {
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-}
-.thirdCont .newsBlock .newsThree:hover {
-  background-color: rgba(128, 128, 128, 0.096);
-}
-.thirdCont .newsBlock .newsFour {
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-}
-.thirdCont .newsBlock .newsFour:hover {
-  background-color: rgba(128, 128, 128, 0.096);
-}
-
-/* PROFILE */
-.profil {
-  border: 1px solid rgb(224, 224, 224);
-  width: 35%;
-}
-.profil .profStyle {
-  border-top: 190px solid rgba(119, 160, 159, 0.438);
-  padding: 20px;
-}
-.profil .profStyle #avatar img {
-  width: 140px;
-  height: 140px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-color: rgb(226, 226, 226);
-  border-radius: 50%;
-  cursor: pointer;
-  border: 5px white solid;
-  margin-top: -100px;
-}
-.profil .profStyle #avatar img:hover {
-  background-color: rgb(129, 129, 129);
-}
-.profil #name {
-  text-transform: lowercase;
-  font-weight: bold;
-  margin-left: 80px;
-  font-size: 1.2em;
-  margin-top: -35px;
-}
-.profil #nameTwo {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-.profil p {
-  margin-left: 80px;
-  margin-top: -1px;
-  font-size: 0.8em;
-  color: rgb(128, 128, 128);
-  font-weight: 700;
-}
-.profil a {
-  padding: -10px;
-}
-.profil a i {
-  padding: 10px;
-  margin-top: 20px;
-  color: gray;
-}
-.profil .navProf {
+.grandCont .bodyCont .secondCont {
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(247, 247, 247);
+  justify-content: center;
 }
-.profil .navProf a {
+.grandCont .bodyCont .secondCont .secondContWrap {
+  display: flex;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 3px 8px 0 rgb(218, 218, 218);
+  width: 700px;
+  border-radius: 9px;
+  margin: 15px;
+  cursor: pointer;
+}
+.grandCont .bodyCont .secondCont .secondContWrap:hover {
+  background-color: rgb(235, 235, 235);
+}
+.grandCont .bodyCont .secondCont i {
+  border-radius: 50%;
+  padding: 15px;
+  background-color: rgb(217, 227, 250);
+  margin-right: 10px;
+  margin-left: 20px;
+  color: rgb(9, 105, 250);
+  cursor: pointer;
+}
+.grandCont .bodyCont .secondCont i:hover {
+  filter: brightness(0.9);
+}
+.grandCont .bodyCont .secondCont h4 {
+  margin-bottom: -10px;
   font-weight: bold;
-  color: black;
-  padding: 20px;
 }
-.profil .navProf a:hover {
-  border-bottom: 3px solid rgb(89, 196, 245);
-  background-color: rgb(230, 230, 230);
+.grandCont .bodyCont .thirdCont form input {
+  font-family: "FontAwesome";
+  background-image: url(/img/search.png);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 250px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.grandCont .bodyCont .thirdCont form input::-moz-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .thirdCont form input:-ms-input-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .thirdCont form input::placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .thirdCont form input:focus {
+  background-position: -20px center;
+  text-indent: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -43,32 +43,42 @@
                 <h1>teptar<span>.</span></h1>
             </a>
             <div class="iconsCont">
-                <i class="fa fa-home"></i>
-                <i class="fa fa-user-group"></i>
-                <i class="fa fa-circle-user"></i>
-                <i class="fa fa-bell"></i>
-                <i class="fa fa-envelope"></i>
+                <i class="fa fa-home" title="Accueil"></i>
+                <i class="fa fa-bell" title="Notifications"></i>
+                <i class="fa fa-envelope" title="Messages"></i>
+                <i class="fa fa-circle-user" title="Compte"></i>
             </div>
-
             <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>
         </div>
-        <div class="grandContWrap">
+        
+        <div class="bodyCont">
             <div class="firstCont">
-                <div id="logout_button" class="logOut">
-                    <p>logout</p>
+                <div class="personalCont">
+                    <div id="avatar"><img src="#"></div>
+                    <div class="nameMail">
+                        <div id="nameTwo"></div>
+                        <div id="email"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="secondCont">
+                <div class="secondContWrap">
+                    <i class="fa fa-plus"></i>
+                    <div class="storyInfo">
+                        <h4>Creer une story</h4>
+                        <p>Partagez une photo ou un message.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="secondCont">
-            </div>
-
             <div class="thirdCont">
-                <form action="s" method="POST">
-                    <input type="search" name="search" id="search" placeholder="SEARCH" autocomplete="off" />
+                <form action="#">
+                    <input type="search" placeholder="Rechercher sur teptar">
                 </form>
-                <div id="back_result"></div>
             </div>
         </div>
+
     </div>
 </body>
 

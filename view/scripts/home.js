@@ -87,26 +87,15 @@ $(document).ready(function () {
     $(".fa-home").click(function () {
         $(this).css("borderBottom", "3px solid blue")
         $(this).css("color", "blue");
-        $(".fa-user-group").css({"borderBottom": "", "color": ""});
         $(".fa-circle-user").css({"borderBottom": "", "color": ""});
         $(".fa-bell").css({"borderBottom": "", "color": ""});
         $(".fa-envelope").css({"borderBottom": "", "color": ""});
 
-    });
-
-    $(".fa-user-group").click(function () {
-        $(this).css("borderBottom", "3px solid blue");
-        $(this).css("color", "blue");
-        $(".fa-home").css({"borderBottom": "", "color": ""});
-        $(".fa-circle-user").css({"borderBottom": "", "color": ""});
-        $(".fa-bell").css({"borderBottom": "", "color": ""});
-        $(".fa-envelope").css({"borderBottom": "", "color": ""});
     });
 
     $(".fa-circle-user").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
-        $(".fa-user-group").css({"borderBottom": "", "color": ""});
         $(".fa-home").css({"borderBottom": "", "color": ""});
         $(".fa-bell").css({"borderBottom": "", "color": ""});
         $(".fa-envelope").css({"borderBottom": "", "color": ""});
@@ -115,7 +104,6 @@ $(document).ready(function () {
     $(".fa-bell").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
-        $(".fa-user-group").css({"borderBottom": "", "color": ""});
         $(".fa-circle-user").css({"borderBottom": "", "color": ""});
         $(".fa-home").css({"borderBottom": "", "color": ""});
         $(".fa-envelope").css({"borderBottom": "", "color": ""});
@@ -124,13 +112,12 @@ $(document).ready(function () {
     $(".fa-envelope").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
-        $(".fa-user-group").css({"borderBottom": "", "color": ""});
         $(".fa-circle-user").css({"borderBottom": "", "color": ""});
         $(".fa-bell").css({"borderBottom": "", "color": ""});
         $(".fa-home").css({"borderBottom": "", "color": ""});
     });
 
-    $("i").hover(function () {
+    $(".iconsCont i").hover(function () {
         $(this).css("background-color", "rgb(236, 236, 236)");
         $(this).css("borderRadius", "9px 9px 0 0");
 
