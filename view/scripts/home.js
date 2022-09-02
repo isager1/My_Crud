@@ -132,6 +132,12 @@ $(document).ready(function () {
 
     });
 
+    $(".fa-user-group").click(function () {
+        window.location.href = "/view/allusers.php";
+
+    });
+
+
     // $(".fa-home").click(function () {
     //     window.location.href = "/view/home.php";
 

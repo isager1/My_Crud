@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="/view/scripts/effets.js"></script>
     <script src="/view/scripts/home.js"></script>
     <title>Teptar</title>
 </head>
@@ -48,7 +47,11 @@
                 <i class="fa fa-envelope" title="Messages"></i>
                 <i class="fa fa-circle-user" title="Compte"></i>
             </div>
-            <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>
+            <div class="rightIconBlock">
+                <i class="fa fa-user-group" title="Users"></i>
+                <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>
+            </div>
+
         </div>
 
         <div class="bodyCont">
