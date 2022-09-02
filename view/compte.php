@@ -65,33 +65,22 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                                 ' . $_SESSION['message'] . '
                             </div>';
                     $_SESSION['message'] = "";
-                }
+                } 
+                
                 ?>
-                <h1>Liste des users</h1>
-                <table class="table">
-                    <thead>
-                        <th>ID</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Actions</th>
-                    </thead>
-                    <tbody>
+               
                         <?php
                         // On boucle sur la variable result
-                        foreach ($result as $produit) {
+                        foreach ($result as $user) {
                         ?>
-                            <tr>
-                                <td><?= $produit['id'] ?></td>
-                                <td><?= $produit['username'] ?></td>
-                                <td><?= $produit['email'] ?></td>
-                                <td><a href="details.php?id=<?= $produit['id'] ?>">Voir</a> <a href="edit.php?id=<?= $produit['id'] ?>">Modifier</a> <a href="../model/delete.php?id=<?= $produit['id'] ?>">Supprimer</a></td>
-                            </tr>
+                            
+                                <?= $user['username'] ?>
+                            
                         <?php
                         }
                         ?>
                     </tbody>
                 </table>
-                <a href="add.php" class="btn btn-primary">Ajouter un user</a>
             </section>
         </div>
     </main>

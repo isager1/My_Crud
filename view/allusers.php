@@ -77,13 +77,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($result as $produit) {
+                        foreach ($result as $user) {
                         ?>
                             <tr>
-                                <td><?= $produit['id'] ?></td>
-                                <td><?= $produit['username'] ?></td>
-                                <td><?= $produit['email'] ?></td>
-                                <td><a href="details.php?id=<?= $produit['id'] ?>">Voir</a> <a href="edit.php?id=<?= $produit['id'] ?>">Modifier</a> <a href="../model/delete.php?id=<?= $produit['id'] ?>">Supprimer</a></td>
+                                <td><?= $user['id'] ?></td>
+                                <td><?= $user['username'] ?></td>
+                                <td><?= $user['email'] ?></td>
+                                <td><a href="details.php?id=<?= $user['id'] ?>">Voir</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a> <a href="../model/delete.php?id=<?= $user['id'] ?>">Supprimer</a></td>
                             </tr>
                         <?php
                         }

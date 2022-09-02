@@ -137,6 +137,12 @@ $(document).ready(function () {
 
     });
 
+    $(".fa-circle-user").click(function () {
+        window.location.href = "/view/compte.php";
+
+    });
+
+
 
     // $(".fa-home").click(function () {
     //     window.location.href = "/view/home.php";

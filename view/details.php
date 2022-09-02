@@ -10,9 +10,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
     $query->bindValue(':id', $id, PDO::PARAM_INT);
     $query->execute();
 
-    $produit = $query->fetch();
+    $user = $query->fetch();
 
-    if(!$produit){
+    if(!$user){
         $_SESSION['erreur'] = "Cet id n'existe pas";
         header('Location: allusers.php');
     }
@@ -26,19 +26,19 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Détails du produit</title>
+    <title>Détails du user</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
     <main class="container">
         <div class="row">
             <section class="col-12">
-                <h1>Détails du <?= $produit['username'] ?></h1>
-                <p>ID : <?= $produit['id'] ?></p>
-                <p>Produit : <?= $produit['username'] ?></p>
-                <p>Prix : <?= $produit['email'] ?></p>
-                <p>Nombre : <?= $produit['avatar'] ?></p>
-                <p><a href="index.php">Retour</a> <a href="edit.php?id=<?= $produit['id'] ?>">Modifier</a></p>
+                <h1>Détails du <?= $user['username'] ?></h1>
+                <p>ID : <?= $user['id'] ?></p>
+                <p>User : <?= $user['username'] ?></p>
+                <p>Email : <?= $user['email'] ?></p>
+                <p>Avatar : <?= $user['avatar'] ?></p>
+                <p><a href="index.php">Retour</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a></p>
             </section>
         </div>
     </main>

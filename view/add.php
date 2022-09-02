@@ -27,8 +27,6 @@ if ($_POST) {
         $query->execute();
 
         $_SESSION['message'] = "User ajouté";
-        require_once('../model/close.php');
-
         header('Location: allusers.php');
     } else {
         $_SESSION['erreur'] = "Le formulaire est incomplet";
