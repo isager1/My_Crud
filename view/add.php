@@ -1,5 +1,4 @@
 <?php
-// On démarre une session
 session_start();
 
 if ($_POST) {
@@ -9,10 +8,8 @@ if ($_POST) {
         && isset($_POST['password']) && !empty($_POST['password'])
         && isset($_POST['avatar']) && !empty($_POST['avatar'])
     ) {
-        // On inclut la connexion à la base
         require_once('../model/connect.php');
 
-        // On nettoie les données envoyées
         $username = strip_tags($_POST['username']);
         $email = strip_tags($_POST['email']);
         $password = strip_tags($_POST['password']);
