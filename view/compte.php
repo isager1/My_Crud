@@ -34,17 +34,19 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
     <div id="login_content" class="grandCont">
-        <div class="panelCont">
-            <a href="home.php">
+    <div class="panelCont">
                 <h1>teptar<span>.</span></h1>
-            </a>
             <div class="iconsCont">
                 <i class="fa fa-home" title="Accueil"></i>
                 <i class="fa fa-bell" title="Notifications"></i>
-                <i class="fa fa-envelope" id="message" title="Messages"></i>
+                <i class="fa fa-envelope" title="Messages"></i>
                 <i class="fa fa-circle-user" title="Compte"></i>
             </div>
-            <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>
+            <div class="rightIconBlock">
+                <i class="fa fa-user-group" title="Users"></i>
+                <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>
+            </div>
+
         </div>
     </div>
 

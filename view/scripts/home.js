@@ -116,9 +116,8 @@ $(document).ready(function () {
         $(".fa-home").css({ "borderBottom": "", "color": "" });
     });
 
-    $(".iconsCont i").hover(function () {
+    $("i").hover(function () {
         $(this).css("background-color", "rgb(236, 236, 236)");
-        $(this).css("borderRadius", "9px 9px 0 0");
 
     }, function () {
         $(this).css("background-color", "");
@@ -139,6 +138,11 @@ $(document).ready(function () {
 
     $(".fa-circle-user").click(function () {
         window.location.href = "/view/compte.php";
+
+    });
+
+    $("h1").click(function () {
+        window.location.href = "/view/home.php";
 
     });
 

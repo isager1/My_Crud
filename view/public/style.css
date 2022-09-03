@@ -8,6 +8,16 @@ body {
 a {
   text-decoration: none;
 }
+a::after {
+  text-decoration: none;
+}
+a::before {
+  text-decoration: none;
+}
+
+h1 {
+  cursor: pointer;
+}
 
 /* NAVBAR */
 .globalCont {
@@ -284,11 +294,15 @@ a {
   background-color: rgb(248, 248, 248);
   box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
   padding: 15px;
-  height: 60px;
+  height: 70px;
+}
+.grandCont .panelCont .rightIconBlock i {
+  padding: 23px;
 }
 .grandCont .panelCont h1 {
   margin: 10px;
   color: black;
+  text-decoration: none;
 }
 .grandCont .panelCont h1 span {
   color: rgb(136, 136, 136);
@@ -296,7 +310,7 @@ a {
 .grandCont .panelCont .iconsCont i {
   margin-right: 50px;
   font-size: 1.5em;
-  padding: 20px;
+  padding: 23px;
   color: rgb(124, 124, 124);
   cursor: pointer;
 }
@@ -320,6 +334,7 @@ a {
 }
 .grandCont .bodyCont .firstCont .personalCont {
   display: flex;
+  align-items: center;
   margin: 10px;
   padding: 10px;
   cursor: pointer;
@@ -337,8 +352,8 @@ a {
   margin-left: 10px;
 }
 .grandCont .bodyCont .firstCont .personalCont #avatar img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -348,16 +363,18 @@ a {
 .grandCont .bodyCont .secondCont {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 .grandCont .bodyCont .secondCont .secondContWrap {
   display: flex;
   align-items: center;
   background-color: rgb(248, 248, 248);
   box-shadow: 0 3px 8px 0 rgb(218, 218, 218);
-  width: 700px;
+  width: 550px;
   border-radius: 9px;
   margin: 15px;
   cursor: pointer;
+  padding: 10px;
 }
 .grandCont .bodyCont .secondCont .secondContWrap:hover {
   background-color: rgb(235, 235, 235);
@@ -374,9 +391,13 @@ a {
 .grandCont .bodyCont .secondCont i:hover {
   filter: brightness(0.9);
 }
-.grandCont .bodyCont .secondCont h4 {
-  margin-bottom: -10px;
+.grandCont .bodyCont .secondCont p {
+  margin-bottom: -5px;
+  color: rgb(114, 114, 114);
+}
+.grandCont .bodyCont .secondCont p span {
   font-weight: bold;
+  color: rgb(71, 71, 71);
 }
 .grandCont .bodyCont .thirdCont form input {
   font-family: "FontAwesome";
@@ -384,12 +405,13 @@ a {
   background-position: 10px center;
   background-repeat: no-repeat;
   text-indent: 30px;
-  padding: 15px;
+  padding: 10px;
   border: none;
   outline: none;
-  width: 250px;
+  width: 260px;
   margin: 20px;
   border-radius: 20px;
+  border: 1px solid rgb(190, 190, 190);
 }
 .grandCont .bodyCont .thirdCont form input::-moz-placeholder {
   font-size: 1.2em;
@@ -406,4 +428,12 @@ a {
 .grandCont .bodyCont .thirdCont form input:focus {
   background-position: -20px center;
   text-indent: 0;
+}
+
+.container {
+  margin: 50px;
+}
+.container h2 {
+  text-align: center;
+  font-size: 1.8em;
 }/*# sourceMappingURL=style.css.map */

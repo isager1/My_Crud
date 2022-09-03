@@ -7,6 +7,18 @@ body {
 
 a {
     text-decoration: none;
+
+    &::after {
+        text-decoration: none;
+    }
+
+    &::before {
+        text-decoration: none;
+    }
+}
+
+h1 {
+   cursor: pointer;
 }
 
 /* NAVBAR */
@@ -335,11 +347,20 @@ a {
         background-color: rgb(248, 248, 248);
         box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
         padding: 15px;
-        height: 60px;
+        height: 70px;
+
+
+        .rightIconBlock {
+
+            i {
+                padding: 23px;
+            }
+        }
 
         h1 {
             margin: 10px;
             color: black;
+            text-decoration: none;
 
             span {
                 color: rgb(136, 136, 136);
@@ -351,7 +372,7 @@ a {
             i {
                 margin-right: 50px;
                 font-size: 1.5em;
-                padding: 20px;
+                padding: 23px;
                 color: rgb(124, 124, 124);
                 cursor: pointer;
             }
@@ -385,6 +406,7 @@ a {
 
             .personalCont {
                 display: flex;
+                align-items: center;
                 margin: 10px;
                 padding: 10px;
                 cursor: pointer;
@@ -407,8 +429,8 @@ a {
                 #avatar {
 
                     img {
-                        height: 50px;
-                        width: 50px;
+                        height: 60px;
+                        width: 60px;
                         border-radius: 50%;
                         background-repeat: no-repeat;
                         object-fit: cover;
@@ -422,16 +444,18 @@ a {
         .secondCont {
             display: flex;
             justify-content: center;
+            margin: 10px;
 
             .secondContWrap {
                 display: flex;
                 align-items: center;
                 background-color: rgb(248, 248, 248);
                 box-shadow: 0 3px 8px 0 rgb(218, 218, 218);
-                width: 700px;
+                width: 550px;
                 border-radius: 9px;
                 margin: 15px;
                 cursor: pointer;
+                padding: 10px;
 
                 &:hover {
                     background-color: rgb(235, 235, 235);
@@ -453,9 +477,14 @@ a {
                 }
             }
 
-            h4 {
-                margin-bottom: -10px;
-                font-weight: bold;
+            p {
+                margin-bottom: -5px;
+                color: rgb(114, 114, 114);
+                
+                span {
+                    font-weight: bold;
+                    color: rgb(71, 71, 71);
+                }
             }
         }
 
@@ -468,12 +497,13 @@ a {
                     background-position: 10px center;
                     background-repeat: no-repeat;
                     text-indent: 30px;
-                    padding: 15px;
+                    padding: 10px;
                     border: none;
                     outline: none;
-                    width: 250px;
+                    width: 260px;
                     margin: 20px;
                     border-radius: 20px;
+                    border: 1px solid rgb(190, 190, 190);
 
                     &::placeholder {
                         font-size: 1.2em;
@@ -491,3 +521,16 @@ a {
         }
     }
 }
+
+
+.container {
+    margin: 50px;
+
+
+    h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+}
+
