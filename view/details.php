@@ -1,31 +1,13 @@
 <?php
 session_start();
-
-if(isset($_GET['id']) && !empty($_GET['id'])){
-    require_once('../model/connect.php');
-
-    $id = strip_tags($_GET['id']);
-    $sql = 'SELECT * FROM `users` WHERE `id` = :id;';
-    $query = $db->prepare($sql);
-    $query->bindValue(':id', $id, PDO::PARAM_INT);
-    $query->execute();
-
-    $user = $query->fetch();
-
-    if(!$user){
-        $_SESSION['erreur'] = "Cet id n'existe pas";
-        header('Location: allusers.php');
-    }
-}else{
-    $_SESSION['erreur'] = "URL invalide";
-    header('Location: allusers.php');
-}
+require_once("../controller/details.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Détails du user</title>
 </head>
 <body>
@@ -37,7 +19,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
                 <p>User : <?= $user['username'] ?></p>
                 <p>Email : <?= $user['email'] ?></p>
                 <p>Avatar : <?= $user['avatar'] ?></p>
-                <p><a href="index.php">Retour</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a></p>
+                <p><a href="allusers.php">Retour</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a></p>
             </section>
         </div>
     </main>

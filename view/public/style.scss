@@ -7,14 +7,6 @@ body {
 
 a {
     text-decoration: none;
-
-    &::after {
-        text-decoration: none;
-    }
-
-    &::before {
-        text-decoration: none;
-    }
 }
 
 h1 {

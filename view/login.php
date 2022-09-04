@@ -25,7 +25,9 @@
             <p>Vous n'avez pas de compte ?</p>
             <div id="regBorder"></div>
             <a href="/view/register.php">S'inscrire</a>
-            <div id="msg-warning"></div>
+            <div id="msg-warning">
+                
+            </div>
         </div>
     </div>
     <script src="/view/scripts/log.js"></script>

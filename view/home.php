@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once("../controller/allusers.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +43,7 @@
 
     <div id="login_content" style="display:none" class="grandCont">
         <div class="panelCont">
-                <h1>teptar<span>.</span></h1>
+            <h1>teptar<span>.</span></h1>
             <div class="iconsCont">
                 <i class="fa fa-home" title="Accueil"></i>
                 <i class="fa fa-bell" title="Notifications"></i>
@@ -83,6 +88,63 @@
             </div>
         </div>
 
+    </div>
+
+
+    <main class="container" style="display: none ;">
+        <div class="row">
+            <section class="col-12">
+                <?php
+                if (!empty($_SESSION['erreur'])) {
+                    echo '<div class="alert alert-danger" role="alert">
+                                ' . $_SESSION['erreur'] . '
+                            </div>';
+                    $_SESSION['erreur'] = "";
+                }
+                ?>
+                <?php
+                if (!empty($_SESSION['message'])) {
+                    echo '<div class="alert alert-success" role="alert">
+                                ' . $_SESSION['message'] . '
+                            </div>';
+                    $_SESSION['message'] = "";
+                }
+                ?>
+                <h2>Liste des users</h2>
+                <table class="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($result as $user) {
+                        ?>
+                            <tr>
+                                <td><?= $user['id'] ?></td>
+                                <td><?= $user['username'] ?></td>
+                                <td><?= $user['email'] ?></td>
+                                <td><a href="details.php?id=<?= $user['id'] ?>">Voir</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a> <a href="../model/delete.php?id=<?= $user['id'] ?>">Supprimer</a></td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+                <a href="add.php" class="btn btn-primary">Ajouter un user</a>
+            </section>
+        </div>
+    </main>
+
+    <div class="messagesCont" style="text-align: center; display: none;">
+        <h1>MESSAGES</h1>
+    </div>
+
+
+    <div class="compteCont" style="display: none ; text-align: center;">
+        <h1>Compte</h1>
     </div>
 </body>
 

@@ -1,13 +1,6 @@
 <?php
 session_start();
-
-require_once('../model/connect.php');
-
-$sql = 'SELECT * FROM `users`';
-$query = $db->prepare($sql);
-$query->execute();
-$result = $query->fetchAll(PDO::FETCH_ASSOC);
-
+require_once("../controller/compte.php");
 ?>
 
 <!DOCTYPE html>
@@ -33,8 +26,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
     <div id="login_content" class="grandCont">
-    <div class="panelCont">
-                <h1>teptar<span>.</span></h1>
+        <div class="panelCont">
+            <h1>teptar<span>.</span></h1>
             <div class="iconsCont">
                 <i class="fa fa-home" title="Accueil"></i>
                 <i class="fa fa-bell" title="Notifications"></i>
@@ -49,41 +42,6 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <main class="container">
-        <div class="row">
-            <section class="col-12">
-                <?php
-                if (!empty($_SESSION['erreur'])) {
-                    echo '<div class="alert alert-danger" role="alert">
-                                ' . $_SESSION['erreur'] . '
-                            </div>';
-                    $_SESSION['erreur'] = "";
-                }
-                ?>
-                <?php
-                if (!empty($_SESSION['message'])) {
-                    echo '<div class="alert alert-success" role="alert">
-                                ' . $_SESSION['message'] . '
-                            </div>';
-                    $_SESSION['message'] = "";
-                } 
-                
-                ?>
-               
-                        <?php
-                        // On boucle sur la variable result
-                        foreach ($result as $user) {
-                        ?>
-                            
-                                <?= $user['username'] ?>
-                            
-                        <?php
-                        }
-                        ?>
-                    </tbody>
-                </table>
-            </section>
-        </div>
     </main>
 
 </body>

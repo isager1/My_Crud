@@ -89,7 +89,11 @@ $(document).ready(function () {
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
         $(".fa-bell").css({ "borderBottom": "", "color": "" });
         $(".fa-envelope").css({ "borderBottom": "", "color": "" });
-
+        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".bodyCont").css({ "display": "flex"});
+        $(".container").css({ "display": "none"});
+        $(".messagesCont").css({ "display": "none"});
+        $(".compteCont").css({ "display": "none"});
     });
 
     $(".fa-circle-user").click(function () {
@@ -98,6 +102,11 @@ $(document).ready(function () {
         $(".fa-home").css({ "borderBottom": "", "color": "" });
         $(".fa-bell").css({ "borderBottom": "", "color": "" });
         $(".fa-envelope").css({ "borderBottom": "", "color": "" });
+        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".bodyCont").css({ "display": "none"});
+        $(".container").css({ "display": "none"});
+        $(".messagesCont").css({ "display": "none"});
+        $(".compteCont").css({ "display": "block"});
     });
 
     $(".fa-bell").click(function () {
@@ -106,6 +115,7 @@ $(document).ready(function () {
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
         $(".fa-home").css({ "borderBottom": "", "color": "" });
         $(".fa-envelope").css({ "borderBottom": "", "color": "" });
+        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
     });
 
     $(".fa-envelope").click(function () {
@@ -114,6 +124,26 @@ $(document).ready(function () {
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
         $(".fa-bell").css({ "borderBottom": "", "color": "" });
         $(".fa-home").css({ "borderBottom": "", "color": "" });
+        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".bodyCont").css({ "display": "none"});
+        $(".container").css({ "display": "none"});
+        $(".messagesCont").css({ "display": "block"});
+        $(".compteCont").css({ "display": "none"});
+
+    });
+
+    $(".fa-user-group").click(function () {
+        $(this).css("borderBottom", "3px solid blue");
+        $(this).css("color", "blue");
+        $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
+        $(".fa-bell").css({ "borderBottom": "", "color": "" });
+        $(".fa-home").css({ "borderBottom": "", "color": "" });
+        $(".fa-envelope").css({ "borderBottom": "", "color": "" });
+        $(".container").css({ "display": "block"});
+        $(".bodyCont").css({ "display": "none"});
+        $(".container").css({ "display": "block"});
+        $(".messagesCont").css({ "display": "none"});
+        $(".compteCont").css({ "display": "none"});
     });
 
     $("i").hover(function () {
@@ -121,30 +151,29 @@ $(document).ready(function () {
 
     }, function () {
         $(this).css("background-color", "");
-        $(this).css("borderRadius", "");
 
     });
 
 
-    $(".fa-envelope").click(function () {
-        window.location.href = "/view/messages.php";
+    // $(".fa-envelope").click(function () {
+    //     window.location.href = "/view/messages.php";
 
-    });
+    // });
 
-    $(".fa-user-group").click(function () {
-        window.location.href = "/view/allusers.php";
+    // $(".fa-user-group").click(function () {
+    //     window.location.href = "/view/allusers.php";
 
-    });
+    // });
 
-    $(".fa-circle-user").click(function () {
-        window.location.href = "/view/compte.php";
+    // $(".fa-circle-user").click(function () {
+    //     window.location.href = "/view/compte.php";
 
-    });
+    // });
 
-    $("h1").click(function () {
-        window.location.href = "/view/home.php";
+    // $("h1").click(function () {
+    //     window.location.href = "/view/home.php";
 
-    });
+    // });
 
 
 
@@ -164,11 +193,11 @@ $(document).ready(function () {
     // }
 
     $(document).ready(function () {
-        if (window.location.href.indexOf("/view/messages.php")) {
-            $(".fa-home").click(function () {
-                window.location.href = "/view/home.php";
-            });
-        }
+        // if (window.location.href.indexOf("/view/messages.php")) {
+        //     $(".fa-home").click(function () {
+        //         window.location.href = "/view/home.php";
+        //     });
+        // }
 
         if (window.location.href.indexOf("/view/home.php")) {
             $(".fa-envelope").css("borderBottom", "")

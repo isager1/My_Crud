@@ -8,12 +8,6 @@ body {
 a {
   text-decoration: none;
 }
-a::after {
-  text-decoration: none;
-}
-a::before {
-  text-decoration: none;
-}
 
 h1 {
   cursor: pointer;
