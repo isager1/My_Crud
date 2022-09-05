@@ -64,7 +64,6 @@ require_once("../controller/allusers.php");
             </div>
             <div class="firstCont">
                 <div class="personalCont">
-                    <!-- <div id="avatar"><img src="#"></div> -->
                     <div class="nameMail">
                         <div id="nameTwo"></div>
                         <div id="email"></div>
@@ -159,7 +158,7 @@ require_once("../controller/allusers.php");
     <div class="compteCont" style="display: none ; text-align: center;">
         <h1>Compte</h1>
     </div>
-    
+
 
     <div class="footer">
         <div class="panelContFooter">

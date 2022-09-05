@@ -1,7 +1,6 @@
 $(document).ready(function () {
     const image_base64 = null;
 
-
     $('#regForm').on('submit', function (event) {
         event.preventDefault();
         const form_data = new FormData(event.target);
@@ -32,17 +31,8 @@ $(document).ready(function () {
 });
 
 $("i").click(function () {
-    window.location.href="/view/home.php";
+    window.location.href = "/view/home.php";
 });
-
-// $("input").click(function () {
-//     if ($("input").val() == 0) {
-//         $(this).css("border", "1px solid blue");
-//     } else if ($(this).val() > 0) {
-//         $(this).css('border', 'none');
-//     }
-// });
-
 
 $("input").hover(function () {
     $(this).css({ "border": "1px solid blue" });

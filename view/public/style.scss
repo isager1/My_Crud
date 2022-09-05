@@ -431,7 +431,7 @@ h1 {
             .personalCont {
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: baseline;
                 flex-direction: column;
                 margin: 10px;
                 padding: 10px;
@@ -1248,6 +1248,12 @@ h1 {
                     font-size: 1.2em;
                 }
             }
+
+            .rightIconBlock {
+                i {
+                    margin-right: -15px;
+                }
+            }
         }
     }
 }
@@ -1279,7 +1285,6 @@ h1 {
 
             h1 {
                 margin: 0;
-                font-size: 1.3em;
             }
         }
 

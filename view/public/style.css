@@ -361,7 +361,7 @@ h1 {
 .grandCont .bodyCont .firstCont .personalCont {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
   margin: 10px;
   padding: 10px;
@@ -873,6 +873,9 @@ h1 {
     padding: 23px;
     font-size: 1.2em;
   }
+  .footer .panelContFooter .rightIconBlock i {
+    margin-right: -15px;
+  }
 }
 @media screen and (max-width: 436px) {
   .grandCont .panelCont .iconsCont {
@@ -893,7 +896,6 @@ h1 {
   }
   .grandCont .panelCont h1 {
     margin: 0;
-    font-size: 1.3em;
   }
   .grandCont .bodyCont {
     display: flex;

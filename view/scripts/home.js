@@ -154,51 +154,7 @@ $(document).ready(function () {
 
     });
 
-
-    // $(".fa-envelope").click(function () {
-    //     window.location.href = "/view/messages.php";
-
-    // });
-
-    // $(".fa-gear").click(function () {
-    //     window.location.href = "/view/allusers.php";
-
-    // });
-
-    // $(".fa-circle-user").click(function () {
-    //     window.location.href = "/view/compte.php";
-
-    // });
-
-    // $("h1").click(function () {
-    //     window.location.href = "/view/home.php";
-
-    // });
-
-
-
-    // $(".fa-home").click(function () {
-    //     window.location.href = "/view/home.php";
-
-    // });
-
-    // if (window.location.href.indexOf("messages.php")) {
-    //     // $(this).css("borderBottom", "3px solid blue")
-    //     // $(this).css("color", "blue");
-
-    //     $(".fa-envelope").click(function () {
-    //         window.location.href = "/view/home.php";
-
-    //     });
-    // }
-
     $(document).ready(function () {
-        // if (window.location.href.indexOf("/view/messages.php")) {
-        //     $(".fa-home").click(function () {
-        //         window.location.href = "/view/home.php";
-        //     });
-        // }
-
         if (window.location.href.indexOf("/view/home.php")) {
             $(".fa-envelope").css("borderBottom", "")
             $(".fa-envelope").css("color", "");
