@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-    <script src="/view/scripts/log.js"></script>
+    <script src="../view/scripts/log.js"></script>
 </body>
 
 </html>

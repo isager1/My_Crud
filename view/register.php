@@ -28,7 +28,7 @@
             <div id="msg-warning"></div>
         </div>
     </form>
-    <script src="/view/scripts/reg.js"></script>
+    <script src="../view/scripts/reg.js"></script>
 </body>
 
 </html>
