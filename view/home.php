@@ -49,6 +49,7 @@ require_once("../controller/allusers.php");
                 <i class="fa fa-bell" title="Notifications"></i>
                 <i class="fa fa-square-plus" title="Messages"></i>
                 <i class="fa fa-envelope" title="Messages"></i>
+                <i class="fa fa-gear" title="Parametres"></i>
             </div>
             <div class="rightIconBlock">
                 <i class="fa-solid fa-right-from-bracket" class="logOut" id="logout_button"></i>

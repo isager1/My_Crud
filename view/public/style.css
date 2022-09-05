@@ -767,6 +767,9 @@ h1 {
     padding: 23px;
     font-size: 1.2em;
   }
+  .grandCont .panelCont .iconsCont .fa-gear {
+    display: none;
+  }
   .grandCont .panelCont .rightIconBlock {
     margin-left: -35px;
   }
