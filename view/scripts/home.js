@@ -89,7 +89,7 @@ $(document).ready(function () {
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
         $(".fa-bell").css({ "borderBottom": "", "color": "" });
         $(".fa-envelope").css({ "borderBottom": "", "color": "" });
-        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".fa-gear").css({ "borderBottom": "", "color": "" });
         $(".bodyCont").css({ "display": "flex"});
         $(".container").css({ "display": "none"});
         $(".messagesCont").css({ "display": "none"});
@@ -102,7 +102,7 @@ $(document).ready(function () {
         $(".fa-home").css({ "borderBottom": "", "color": "" });
         $(".fa-bell").css({ "borderBottom": "", "color": "" });
         $(".fa-envelope").css({ "borderBottom": "", "color": "" });
-        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".fa-gear").css({ "borderBottom": "", "color": "" });
         $(".bodyCont").css({ "display": "none"});
         $(".container").css({ "display": "none"});
         $(".messagesCont").css({ "display": "none"});
@@ -115,7 +115,7 @@ $(document).ready(function () {
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
         $(".fa-home").css({ "borderBottom": "", "color": "" });
         $(".fa-envelope").css({ "borderBottom": "", "color": "" });
-        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".fa-gear").css({ "borderBottom": "", "color": "" });
     });
 
     $(".fa-envelope").click(function () {
@@ -124,7 +124,7 @@ $(document).ready(function () {
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
         $(".fa-bell").css({ "borderBottom": "", "color": "" });
         $(".fa-home").css({ "borderBottom": "", "color": "" });
-        $(".fa-user-group").css({ "borderBottom": "", "color": "" });
+        $(".fa-gear").css({ "borderBottom": "", "color": "" });
         $(".bodyCont").css({ "display": "none"});
         $(".container").css({ "display": "none"});
         $(".messagesCont").css({ "display": "block"});
@@ -132,7 +132,7 @@ $(document).ready(function () {
 
     });
 
-    $(".fa-user-group").click(function () {
+    $(".fa-gear").click(function () {
         $(this).css("borderBottom", "3px solid blue");
         $(this).css("color", "blue");
         $(".fa-circle-user").css({ "borderBottom": "", "color": "" });
@@ -160,7 +160,7 @@ $(document).ready(function () {
 
     // });
 
-    // $(".fa-user-group").click(function () {
+    // $(".fa-gear").click(function () {
     //     window.location.href = "/view/allusers.php";
 
     // });

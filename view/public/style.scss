@@ -394,13 +394,56 @@ h1 {
         justify-content: space-between;
         align-items: center;
 
+
+        .panelSearch {
+            form {
+                display: none;
+
+                input {
+                    font-family: 'FontAwesome';
+                    background-image: url(/img/search.png);
+                    background-position: 10px center;
+                    background-repeat: no-repeat;
+                    text-indent: 30px;
+                    padding: 15px;
+                    border: none;
+                    outline: none;
+                    width: 250px;
+                    margin: 20px;
+                    border-radius: 20px;
+
+                    &::placeholder {
+                        font-size: 1.2em;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                }
+
+                input:focus {
+                    background-position: -20px center;
+                    text-indent: 0;
+                }
+            }
+
+        }
+
         .firstCont {
 
             .personalCont {
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 margin: 10px;
                 padding: 10px;
                 cursor: pointer;
+
+                .nameMail {
+                    p {
+                        display: none;
+                        font-weight: bold;
+                        color: rgb(32, 117, 228);
+                    }
+                }
 
                 &:hover {
                     background-color: rgb(224, 224, 224);
@@ -408,8 +451,9 @@ h1 {
                 }
 
                 #nameTwo {
-                    margin-left: 10px;
+                    text-align: center;
                     margin-bottom: 5px;
+                    margin-top: 10px;
                     font-weight: bold;
                 }
 
@@ -501,6 +545,13 @@ h1 {
                 }
             }
 
+            i {
+                display: none;
+                color: rgb(109, 109, 109);
+                font-size: 1.7em;
+                margin-right: 50px;
+            }
+
 
         }
     }
@@ -543,11 +594,765 @@ h1 {
         .actions {
             display: flex;
 
+            .fa-trash {
+                color: rgb(255, 137, 137);
+            }
+
             a {
                 margin-right: 10px;
                 padding: 10px;
-                color: rgb(51, 129, 245);;
+                color: rgb(51, 129, 245);
+                ;
                 border-radius: 9px;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+
+/* FOOTER */
+
+.footer {
+    .panelContFooter {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(248, 248, 248);
+        box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
+        padding: 15px;
+        height: 40px;
+
+
+        .rightIconBlock {
+
+            i {
+                padding: 23px;
+            }
+        }
+
+        h1 {
+            margin: 10px;
+            color: black;
+            text-decoration: none;
+
+            span {
+                color: rgb(136, 136, 136);
+            }
+        }
+
+        .iconsCont {
+
+            i {
+                margin-right: 50px;
+                font-size: 1.5em;
+                padding: 23px;
+                color: rgb(124, 124, 124);
+                cursor: pointer;
+            }
+
+        }
+
+
+
+        i {
+            margin-right: 50px;
+            font-size: 1.5em;
+            padding: 20px;
+            color: rgb(124, 124, 124);
+            cursor: pointer;
+        }
+
+        #avatar {
+
+            img {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                box-shadow: 0 2px 6px 0 gray;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+/* RESPONSIVE */
+
+/* NAV-BAR */
+
+@media screen and (max-width: 1600px) {
+    .globalCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5vh;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .globalCont {
+
+        .logoCont {
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        .homeCont {
+            display: flex;
+            justify-content: center;
+
+            .navBar {
+                padding: 4vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 618px) {
+
+    .globalCont {
+
+        .logoCont {
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .homeCont {
+            display: flex;
+            justify-content: center;
+
+            .navBar {
+                padding: 4vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .globalCont {
+
+        .logoCont {
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        .homeCont {
+            display: flex;
+            justify-content: center;
+
+            .navBar {
+                padding: 2vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 368px) {
+
+    .globalCont {
+
+        .logoCont {
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        .homeCont {
+            display: flex;
+            justify-content: center;
+
+            .navBar {
+                padding: 1vh;
+            }
+        }
+    }
+}
+
+
+
+/* LOGIN */
+
+
+@media screen and (max-width: 468px) {
+
+    #logForm {
+
+        .logFormStyl {
+            padding: 10px;
+            width: 300px;
+        }
+
+        input {
+            width: 200px;
+            align-self: center;
+        }
+
+        #btn-log {
+            width: 233px;
+        }
+
+        #regBorder {
+            width: 233px;
+        }
+    }
+}
+
+/* REGISTER */
+
+
+@media screen and (max-width: 468px) {
+
+    #regForm {
+
+        .regFormStyl {
+            padding: 10px;
+            width: 300px;
+
+            #regBorder {
+                width: 233px;
+            }
+        }
+
+        input {
+            width: 200px;
+            align-self: center;
+        }
+
+        #btn-reg {
+            width: 233px;
+        }
+    }
+}
+
+
+
+
+/* HOME - ACCUEIL */
+
+
+@media screen and (max-width: 1128px) {
+
+    .grandCont {
+        .panelCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .bodyCont {
+            .thirdCont {
+                form {
+                    input {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+ 
+}
+
+@media screen and (max-width: 1080px) {
+
+    .grandCont {
+        .panelCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .bodyCont {
+            .thirdCont {
+                form {
+                    input {
+                        display: none;
+                    }
+                }
+
+                i {
+                    display: block;
+                }
+            }
+
+            .secondCont {
+                .secondContWrap {
+                    width: 450px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 948px) {
+
+    .grandCont {
+        .panelCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            i {
+                margin-right: 30px;
+                padding: 15px;
+                font-size: 1.2em;
+            }
+        }
+
+        .bodyCont {
+            .thirdCont {
+                form {
+                    input {
+                        display: none;
+                    }
+                }
+
+                i {
+                    display: block;
+                }
+            }
+
+            .secondCont {
+                .secondContWrap {
+                    width: 450px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 848px) {
+
+    .grandCont {
+        .panelCont {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 10px;
+                    padding: 23px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+
+        .bodyCont {
+            .thirdCont {
+                form {
+                    input {
+                        display: none;
+                    }
+                }
+
+                i {
+                    display: block;
+                }
+            }
+
+            .secondCont {
+                .secondContWrap {
+                    width: 350px;
+                }
+            }
+        }
+    }
+
+
+    .footer {
+        .panelContFooter {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 10px;
+                    padding: 23px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 718px) {
+
+    .grandCont {
+        .panelCont {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 10px;
+                    padding: 23px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+
+        .bodyCont {
+            .thirdCont {
+                form {
+                    input {
+                        display: none;
+                    }
+                }
+
+                i {
+                    display: block;
+                }
+            }
+
+            .secondCont {
+                .secondContWrap {
+                    width: 250px;
+
+                    .storyInfo {
+                        p {
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .panelContFooter {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 10px;
+                    padding: 23px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 686px) {
+
+    .grandCont {
+        .panelCont {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 5px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+
+            .rightIconBlock {
+                margin-left: -35px;
+
+                i {
+                    display: none;
+                }
+            }
+        }
+
+        .bodyCont {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+            .thirdCont {
+                form {
+                    input {
+                        display: block;
+                    }
+                }
+
+                i {
+                    display: none;
+                }
+            }
+
+            .secondCont {
+
+                .secondContWrap {
+                    display: flex;
+                    align-items: baseline;
+                    width: 220px;
+                    padding: 10px;
+
+                    .storyInfo {
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+
+                h4 {}
+
+                i {
+                    margin-left: 0;
+                }
+            }
+
+            .firstCont {
+                .personalCont {
+                    .nameMail {
+                        p {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer {
+        .panelContFooter {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 5px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .grandCont {
+        .panelCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .iconsCont {
+                margin-left: 150px;
+                i {
+                    margin-right: 5px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+
+                .fa-home {
+                    display: none;
+                }
+                .fa-bell {
+                    display: none;
+                }
+            }
+
+            .rightIconBlock {
+                margin-left: -35px;
+
+                i {
+                    display: none;
+                }
+            }
+        }
+
+        .bodyCont {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+            .thirdCont {
+                form {
+                    input {
+                        display: block;
+                    }
+                }
+
+                i {
+                    display: none;
+                }
+            }
+
+            .secondCont {
+
+                .secondContWrap {
+                    display: none;
+
+                    .storyInfo {
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+
+                h4 {}
+            }
+
+            .firstCont {
+                .personalCont {
+                    .nameMail {
+                        p {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer {
+        .panelContFooter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+
+                i {
+                    margin-right: 5px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 436px) {
+
+    .grandCont {
+        .panelCont {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 0px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+
+            .rightIconBlock {
+                margin-left: -35px;
+
+                i {
+                    display: none;
+                }
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 1.3em;
+            }
+        }
+
+        .bodyCont {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .panelSearch {
+                form {
+                    display: block;
+                }
+            }
+
+            .thirdCont {
+                form {
+                    display: none;
+
+                    input {
+                        display: block;
+                    }
+                }
+
+                i {
+                    display: none;
+                }
+            }
+
+            .secondCont {
+
+            
+            }
+
+            .firstCont {
+                border-bottom: 1px solid rgb(211, 211, 211);
+
+                .personalCont {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .nameMail {
+                        p {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer {
+        .panelContFooter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 0px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+
+            h1 {
+                margin: 0;
                 font-size: 1.3em;
             }
         }

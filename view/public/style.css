@@ -326,19 +326,60 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+.grandCont .bodyCont .panelSearch form {
+  display: none;
+}
+.grandCont .bodyCont .panelSearch form input {
+  font-family: "FontAwesome";
+  background-image: url(/img/search.png);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 250px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.grandCont .bodyCont .panelSearch form input::-moz-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .panelSearch form input:-ms-input-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .panelSearch form input::placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .panelSearch form input:focus {
+  background-position: -20px center;
+  text-indent: 0;
+}
 .grandCont .bodyCont .firstCont .personalCont {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 10px;
   padding: 10px;
   cursor: pointer;
+}
+.grandCont .bodyCont .firstCont .personalCont .nameMail p {
+  display: none;
+  font-weight: bold;
+  color: rgb(32, 117, 228);
 }
 .grandCont .bodyCont .firstCont .personalCont:hover {
   background-color: rgb(224, 224, 224);
   border-radius: 9px;
 }
 .grandCont .bodyCont .firstCont .personalCont #nameTwo {
-  margin-left: 10px;
+  text-align: center;
   margin-bottom: 5px;
+  margin-top: 10px;
   font-weight: bold;
 }
 .grandCont .bodyCont .firstCont .personalCont #email {
@@ -416,6 +457,12 @@ h1 {
   background-position: -20px center;
   text-indent: 0;
 }
+.grandCont .bodyCont .thirdCont i {
+  display: none;
+  color: rgb(109, 109, 109);
+  font-size: 1.7em;
+  margin-right: 50px;
+}
 
 .row {
   display: flex;
@@ -448,10 +495,453 @@ h1 {
 .row .actionBlock .actions {
   display: flex;
 }
+.row .actionBlock .actions .fa-trash {
+  color: rgb(255, 137, 137);
+}
 .row .actionBlock .actions a {
   margin-right: 10px;
   padding: 10px;
   color: rgb(51, 129, 245);
   border-radius: 9px;
   font-size: 1.3em;
+}
+
+/* FOOTER */
+.footer .panelContFooter {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
+  padding: 15px;
+  height: 40px;
+}
+.footer .panelContFooter .rightIconBlock i {
+  padding: 23px;
+}
+.footer .panelContFooter h1 {
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+.footer .panelContFooter h1 span {
+  color: rgb(136, 136, 136);
+}
+.footer .panelContFooter .iconsCont i {
+  margin-right: 50px;
+  font-size: 1.5em;
+  padding: 23px;
+  color: rgb(124, 124, 124);
+  cursor: pointer;
+}
+.footer .panelContFooter i {
+  margin-right: 50px;
+  font-size: 1.5em;
+  padding: 20px;
+  color: rgb(124, 124, 124);
+  cursor: pointer;
+}
+.footer .panelContFooter #avatar img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 2px 6px 0 gray;
+}
+
+/* RESPONSIVE */
+/* NAV-BAR */
+@media screen and (max-width: 1600px) {
+  .globalCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh;
+  }
+}
+@media screen and (max-width: 912px) {
+  .globalCont .logoCont p {
+    font-size: 1.2em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 4vh;
+  }
+}
+@media screen and (max-width: 618px) {
+  .globalCont .logoCont p {
+    font-size: 1em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 4vh;
+  }
+}
+@media screen and (max-width: 568px) {
+  .globalCont .logoCont p {
+    font-size: 0.8em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 2vh;
+  }
+}
+@media screen and (max-width: 368px) {
+  .globalCont .logoCont p {
+    font-size: 0.8em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 1vh;
+  }
+}
+/* LOGIN */
+@media screen and (max-width: 468px) {
+  #logForm .logFormStyl {
+    padding: 10px;
+    width: 300px;
+  }
+  #logForm input {
+    width: 200px;
+    align-self: center;
+  }
+  #logForm #btn-log {
+    width: 233px;
+  }
+  #logForm #regBorder {
+    width: 233px;
+  }
+}
+/* REGISTER */
+@media screen and (max-width: 468px) {
+  #regForm .regFormStyl {
+    padding: 10px;
+    width: 300px;
+  }
+  #regForm .regFormStyl #regBorder {
+    width: 233px;
+  }
+  #regForm input {
+    width: 200px;
+    align-self: center;
+  }
+  #regForm #btn-reg {
+    width: 233px;
+  }
+}
+/* HOME - ACCUEIL */
+@media screen and (max-width: 1128px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 948px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grandCont .panelCont i {
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 848px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 350px;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 718px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 250px;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap .storyInfo p {
+    font-size: 0.7em;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 686px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: -35px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    display: flex;
+    align-items: baseline;
+    width: 220px;
+    padding: 10px;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap .storyInfo p {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont i {
+    margin-left: 0;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 470px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .grandCont .panelCont .iconsCont {
+    margin-left: 150px;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .iconsCont .fa-home {
+    display: none;
+  }
+  .grandCont .panelCont .iconsCont .fa-bell {
+    display: none;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: -35px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap .storyInfo p {
+    display: none;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 436px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: -35px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .panelCont h1 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grandCont .bodyCont .panelSearch form {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont form {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .firstCont {
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+  .grandCont .bodyCont .firstCont .personalCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .footer .panelContFooter h1 {
+    margin: 0;
+    font-size: 1.3em;
+  }
 }/*# sourceMappingURL=style.css.map */
