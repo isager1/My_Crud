@@ -27,7 +27,7 @@ if ($_POST) {
         $query->execute();
 
         $_SESSION['message'] = "User ajouté";
-        header('Location: allusers.php');
+        header('Location: home.php');
     } else {
         $_SESSION['erreur'] = "Le formulaire est incomplet";
     }

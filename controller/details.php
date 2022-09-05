@@ -14,9 +14,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 
     if(!$user){
         $_SESSION['erreur'] = "Cet id n'existe pas";
-        header('Location: allusers.php');
+        header('Location: home.php');
     }
 }else{
     $_SESSION['erreur'] = "URL invalide";
-    header('Location: allusers.php');
+    header('Location: home.php');
 }

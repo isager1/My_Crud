@@ -19,7 +19,7 @@ require_once("../controller/details.php");
                 <p>User : <?= $user['username'] ?></p>
                 <p>Email : <?= $user['email'] ?></p>
                 <p>Avatar : <?= $user['avatar'] ?></p>
-                <p><a href="allusers.php">Retour</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a></p>
+                <p><a href="home.php">Retour</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a></p>
             </section>
         </div>
     </main>

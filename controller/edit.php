@@ -24,7 +24,7 @@ if ($_POST) {
 
         $_SESSION['message'] = "username modifié";
 
-        header('Location: allusers.php');
+        header('Location: home.php');
     } else {
         $_SESSION['erreur'] = "Le formulaire est incomplet";
     }
@@ -47,9 +47,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
     if (!$username) {
         $_SESSION['erreur'] = "Cet id n'existe pas";
-        header('Location: allusers.php');
+        header('Location: home.php');
     }
 } else {
     $_SESSION['erreur'] = "URL invalide";
-    header('Location: allusers.php');
+    header('Location: home.php');
 }

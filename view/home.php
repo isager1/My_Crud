@@ -111,29 +111,36 @@ require_once("../controller/allusers.php");
                 }
                 ?>
                 <h2>Liste des users</h2>
-                <table class="table">
-                    <thead>
-                        <th>ID</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Actions</th>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach ($result as $user) {
-                        ?>
-                            <tr>
-                                <td><?= $user['id'] ?></td>
-                                <td><?= $user['username'] ?></td>
-                                <td><?= $user['email'] ?></td>
-                                <td><a href="details.php?id=<?= $user['id'] ?>">Voir</a> <a href="edit.php?id=<?= $user['id'] ?>">Modifier</a> <a href="../model/delete.php?id=<?= $user['id'] ?>">Supprimer</a></td>
-                            </tr>
-                        <?php
-                        }
-                        ?>
-                    </tbody>
-                </table>
-                <a href="add.php" class="btn btn-primary">Ajouter un user</a>
+                <div class="infoTitles">
+                    <h4>id</h4>
+                    <h4>Username</h4>
+                    <h4>Email</h4>
+                    <h4>Action</h4>
+
+                </div>
+                <?php
+                foreach ($result as $user) {
+                ?>
+                    <div class="actionBlock">
+                        <div class="idBlock">
+                            <p><?= $user['id'] ?></p>
+                        </div>
+                        <div class="userBlock">
+                            <p><?= $user['username'] ?></p>
+                        </div>
+                        <div class="mailBlock">
+                            <p><?= $user['email'] ?></p>
+                        </div>
+                        <div class="actions">
+                            <a href="details.php?id=<?= $user['id'] ?>"><i class="fa fa-user"></i></a>
+                            <a href="edit.php?id=<?= $user['id'] ?>"><i class="fa fa-pencil"></i></a>
+                            <a href="../model/delete.php?id=<?= $user['id'] ?>"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+                <a href="add.php" class="btn btn-primary">Ajouter</a>
             </section>
         </div>
     </main>

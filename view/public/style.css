@@ -417,10 +417,41 @@ h1 {
   text-indent: 0;
 }
 
-.container {
-  margin: 50px;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container h2 {
-  text-align: center;
-  font-size: 1.8em;
+.row .btn-primary {
+  color: rgb(51, 129, 245);
+  border-radius: 9px;
+  font-size: 1.5em;
+}
+.row .btn-primary:hover {
+  filter: brightness(1.2);
+}
+.row .infoTitles {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  width: 800px;
+}
+.row .actionBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .actionBlock div {
+  margin-right: 240px;
+  container-type: inline-size;
+}
+.row .actionBlock .actions {
+  display: flex;
+}
+.row .actionBlock .actions a {
+  margin-right: 10px;
+  padding: 10px;
+  color: rgb(51, 129, 245);
+  border-radius: 9px;
+  font-size: 1.3em;
 }/*# sourceMappingURL=style.css.map */

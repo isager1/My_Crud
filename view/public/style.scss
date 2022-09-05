@@ -10,7 +10,7 @@ a {
 }
 
 h1 {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 /* NAVBAR */
@@ -507,14 +507,49 @@ h1 {
 }
 
 
-.container {
-    margin: 50px;
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .btn-primary {
+        color: rgb(51, 129, 245);
+        border-radius: 9px;
+        font-size: 1.5em;
 
-    h2 {
-        text-align: center;
-        font-size: 1.8em;
+        &:hover {
+            filter: brightness(1.2);
+        }
     }
 
-}
+    .infoTitles {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(211, 211, 211);
+        width: 800px;
+    }
 
+    .actionBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            margin-right: 240px;
+            container-type: inline-size;
+
+        }
+
+        .actions {
+            display: flex;
+
+            a {
+                margin-right: 10px;
+                padding: 10px;
+                color: rgb(51, 129, 245);;
+                border-radius: 9px;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
