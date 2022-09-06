@@ -326,8 +326,38 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+.grandCont .bodyCont .panelSearch #search2 {
+  border: none;
+  outline: none;
+  margin-bottom: -50px;
+}
+.grandCont .bodyCont .panelSearch #back_result2 {
+  padding: 10px;
+  width: 270px;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px 0 gray;
+  display: none;
+  overflow: scroll;
+  height: 200px;
+  position: fixed;
+  background-color: #fff;
+}
+.grandCont .bodyCont .panelSearch #pic {
+  vertical-align: middle;
+}
+.grandCont .bodyCont .panelSearch #user {
+  margin: 5px;
+}
+.grandCont .bodyCont .panelSearch #user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .grandCont .bodyCont .panelSearch form {
   display: none;
+  margin: 20px;
 }
 .grandCont .bodyCont .panelSearch form input {
   font-family: "FontAwesome";
@@ -339,8 +369,6 @@ h1 {
   border: none;
   outline: none;
   width: 250px;
-  margin: 20px;
-  border-radius: 20px;
 }
 .grandCont .bodyCont .panelSearch form input::-moz-placeholder {
   font-size: 1.2em;
@@ -428,6 +456,9 @@ h1 {
   margin-bottom: -10px;
   font-weight: bold;
 }
+.grandCont .bodyCont .thirdCont {
+  margin: 20px;
+}
 .grandCont .bodyCont .thirdCont form input {
   font-family: "FontAwesome";
   background-image: url(/img/search.png);
@@ -437,9 +468,7 @@ h1 {
   padding: 15px;
   border: none;
   outline: none;
-  width: 250px;
-  margin: 20px;
-  border-radius: 20px;
+  width: 350px;
 }
 .grandCont .bodyCont .thirdCont form input::-moz-placeholder {
   font-size: 1.2em;
@@ -462,6 +491,37 @@ h1 {
   color: rgb(109, 109, 109);
   font-size: 1.7em;
   margin-right: 50px;
+}
+.grandCont .bodyCont .thirdCont #search {
+  border: none;
+  outline: none;
+  margin-bottom: -0.5px;
+  width: 280px;
+  font-size: 1em;
+}
+.grandCont .bodyCont .thirdCont #back_result {
+  padding: 10px;
+  width: 260px;
+  margin: 0 auto;
+  border-top: 5px solid rgb(226, 226, 226);
+  display: none;
+  height: 500px;
+  border-radius: 0px 0px 10px 10px;
+  position: fixed;
+  background-color: #fff;
+}
+.grandCont .bodyCont .thirdCont #pic {
+  vertical-align: middle;
+}
+.grandCont .bodyCont .thirdCont #user {
+  margin: 5px;
+}
+.grandCont .bodyCont .thirdCont #user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .row {

@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once("../controller/allusers.php");
+// require_once("../controller/search.php");
 ?>
 
 <!DOCTYPE html>
@@ -59,9 +60,10 @@ require_once("../controller/allusers.php");
 
         <div class="bodyCont">
             <div class="panelSearch">
-                <form action="#">
-                    <input type="search" placeholder="Rechercher sur teptar">
+                <form action="s" method="POST">
+                    <input type="search" name="search2" id="search2" placeholder="Rechercher sur teptar">
                 </form>
+                <div id="back_result2"></div>
             </div>
             <div class="firstCont">
                 <div class="personalCont">
@@ -87,10 +89,10 @@ require_once("../controller/allusers.php");
                 </div>
             </div>
             <div class="thirdCont">
-                <i class="fa fa-magnifying-glass"></i>
-                <form action="#">
-                    <input type="search" placeholder="Rechercher sur teptar">
-                </form>
+                    <form action="s" method="POST">
+                        <input type="search" name="search" id="search" placeholder="Rechercher sur teptar">
+                    </form>
+                    <div id="back_result"></div>
             </div>
         </div>
 
@@ -118,7 +120,6 @@ require_once("../controller/allusers.php");
                 ?>
                 <h2>Liste des users</h2>
                 <div class="infoTitles">
-                    <h4>id</h4>
                     <h4>Username</h4>
                     <h4>Email</h4>
                     <h4>Action</h4>
@@ -128,9 +129,6 @@ require_once("../controller/allusers.php");
                 foreach ($result as $user) {
                 ?>
                     <div class="actionBlock">
-                        <div class="idBlock">
-                            <p><?= $user['id'] ?></p>
-                        </div>
                         <div class="userBlock">
                             <p><?= $user['username'] ?></p>
                         </div>
@@ -146,7 +144,7 @@ require_once("../controller/allusers.php");
                 <?php
                 }
                 ?>
-                <a href="add.php" class="btn btn-primary">Ajouter</a>
+                <!-- <a href="add.php" class="btn btn-primary">Ajouter</a> -->
             </section>
         </div>
     </main>

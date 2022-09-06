@@ -16,3 +16,5 @@ $_SESSION['username'] = $username;
 $_SESSION['password'] = $password;
 $_SESSION['email'] = $email;
 $_SESSION['avatar'] = $avatar;
+
+

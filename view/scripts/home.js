@@ -71,6 +71,24 @@ $(document).ready(function () {
             });
         });
 
+        $(document).ready(function () {
+
+            $('#search2').keyup(function () {
+
+                var name = $(this).val();
+                $.post('../controller/search.php', { name: name }, function (data) {
+
+                    $('div#back_result2').css({ 'display': 'block' });
+                    $('div#back_result2').html(data);
+                });
+
+                $('body').click(function () {
+                    $('div#back_result2').css({ 'display': 'none' });
+
+                })
+            });
+        });
+
     });
 
     $("#logout_button").click(() => {
