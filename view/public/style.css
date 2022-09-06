@@ -949,4 +949,77 @@ h1 {
     margin: 0;
     font-size: 1.3em;
   }
+}
+@media screen and (max-width: 412px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: 0px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .panelCont h1 {
+    margin: 0;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grandCont .bodyCont .panelSearch form {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont form {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .firstCont {
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+  .grandCont .bodyCont .firstCont .personalCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .footer .panelContFooter h1 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .footer .rightIconBlock i {
+    margin-right: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */

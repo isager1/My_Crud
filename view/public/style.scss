@@ -861,7 +861,7 @@ h1 {
         }
     }
 
- 
+
 }
 
 @media screen and (max-width: 1080px) {
@@ -1163,8 +1163,10 @@ h1 {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .iconsCont {
                 margin-left: 150px;
+
                 i {
                     margin-right: 5px;
                     padding: 23px;
@@ -1174,6 +1176,7 @@ h1 {
                 .fa-home {
                     display: none;
                 }
+
                 .fa-bell {
                     display: none;
                 }
@@ -1318,10 +1321,7 @@ h1 {
                 }
             }
 
-            .secondCont {
-
-            
-            }
+            .secondCont {}
 
             .firstCont {
                 border-bottom: 1px solid rgb(211, 211, 211);
@@ -1348,6 +1348,7 @@ h1 {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .iconsCont {
                 display: flex;
                 align-items: center;
@@ -1363,6 +1364,116 @@ h1 {
             h1 {
                 margin: 0;
                 font-size: 1.3em;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 412px) {
+
+    .grandCont {
+        .panelCont {
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 0px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+
+            .rightIconBlock {
+                margin-left: 0px;
+
+                i {
+                    display: none;
+                }
+            }
+
+            h1 {
+                margin: 0;
+            }
+        }
+
+        .bodyCont {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .panelSearch {
+                form {
+                    display: block;
+                }
+            }
+
+            .thirdCont {
+                form {
+                    display: none;
+
+                    input {
+                        display: block;
+                    }
+                }
+
+                i {
+                    display: none;
+                }
+            }
+
+            .secondCont {}
+
+            .firstCont {
+                border-bottom: 1px solid rgb(211, 211, 211);
+
+                .personalCont {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .nameMail {
+                        p {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer {
+        .panelContFooter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .iconsCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                i {
+                    margin-right: 0px;
+                    padding: 23px;
+                    font-size: 1.2em;
+                }
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 1.3em;
+            }
+        }
+
+        .rightIconBlock {
+            i {
+                margin-right: 0px;
             }
         }
     }
