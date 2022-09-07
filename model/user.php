@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once('db.php');
 
 class User {
@@ -38,10 +38,11 @@ class User {
 
 
     public static function login() {
+        $password = $_POST['password'];
         global $connection;
         $data = [
             "username" => $_POST['username'],
-            "password" => $_POST['password'],
+            "password" => $_POST['password'] = md5($password),
          
         ];
         $sql = 'SELECT * FROM users WHERE username = :username AND password = :password';
@@ -52,7 +53,6 @@ class User {
             echo json_encode([
                 "status" => 200,
                 "data" => $request->fetch()
-                
             ]);
         } else {
             echo json_encode([

@@ -117,6 +117,7 @@ require_once("../controller/allusers.php");
                             </div>';
                     $_SESSION['message'] = "";
                 }
+
                 ?>
                 <h2>Liste des users</h2>
                 <div class="infoTitles">

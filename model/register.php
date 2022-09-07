@@ -1,8 +1,9 @@
 <?php
-
+session_start();
 require_once('./db.php');
 
 function register_user() {
+    $password = $_POST['password'];
     global $connection;
     if (isset($_FILES["avatar"]) == false)
         return;
@@ -17,7 +18,7 @@ function register_user() {
     $data = [
         "username" => $_POST['username'],
         "email" => $_POST['email'],
-        "password" => $_POST['password'],
+        "password" => $_POST['password'] = md5($password),
         "avatar" => "/uploads" . "/" . $_POST["email"]  . "/$filename"
     ];
     if ($request->execute($data) == true) {
@@ -27,6 +28,7 @@ function register_user() {
         echo json_encode($request->fetchAll());
     }
 
+    
     
 }
 
