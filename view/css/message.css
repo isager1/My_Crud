@@ -1,0 +1,24 @@
+.storys {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    margin: 10px;
+}
+
+button {
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

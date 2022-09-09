@@ -1,0 +1,1093 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+/* NAVBAR */
+.globalCont {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30vh;
+}
+.globalCont .logoCont {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.globalCont .logoCont h1 {
+  font-size: 4em;
+  color: rgb(0, 0, 0);
+  margin-bottom: -15px;
+}
+.globalCont .logoCont h1 span {
+  color: rgb(148, 148, 148);
+}
+.globalCont .logoCont p {
+  font-size: 1.5em;
+}
+.globalCont .logoCont p span {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.globalCont .homeCont {
+  display: flex;
+  justify-content: center;
+}
+.globalCont .homeCont .navBar {
+  padding: 10vh;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0px 5px 10px 0 rgb(204, 204, 204);
+  border-radius: 9px;
+}
+.globalCont .homeCont .navBar a {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10px;
+  padding: 15px;
+  background-color: blue;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.globalCont .homeCont .navBar a:hover {
+  filter: brightness(0.9);
+}
+.globalCont .homeCont .navBar .navInside {
+  display: flex;
+  flex-direction: column;
+}
+.globalCont #regBorder {
+  border-bottom: 1px solid rgb(190, 190, 190);
+  width: 250px;
+  margin: 1.3vh;
+}
+
+/* REG-FORM */
+#regForm {
+  display: flex;
+  justify-content: center;
+  margin: 15vh;
+}
+#regForm input {
+  width: 350px;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 6px;
+}
+#regForm input::-moz-placeholder {
+  font-size: 1.2em;
+}
+#regForm input:-ms-input-placeholder {
+  font-size: 1.2em;
+}
+#regForm input::placeholder {
+  font-size: 1.2em;
+}
+#regForm #btn-reg {
+  width: 383px;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(33, 167, 21);
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1.4em;
+}
+#regForm #btn-reg:hover {
+  background-color: rgb(34, 150, 24);
+}
+#regForm .regFormStyl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0px 5px 10px 0 rgb(177, 176, 176);
+  opacity: 0.6;
+  background-color: #fff;
+  border-radius: 9px;
+}
+#regForm .regFormStyl i {
+  align-self: self-end;
+  cursor: pointer;
+  color: rgb(145, 144, 144);
+}
+#regForm .regFormStyl #msg-warning {
+  display: none;
+  color: rgb(231, 71, 71);
+}
+#regForm .regFormStyl a {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(2, 19, 252);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#regForm .regFormStyl a:hover {
+  background-color: rgb(3, 0, 197);
+}
+#regForm .regFormStyl i {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+}
+#regForm .regFormStyl p {
+  color: rgb(104, 104, 104);
+}
+#regForm .regFormStyl #regBorder {
+  border-bottom: 1px solid rgb(190, 190, 190);
+  width: 380px;
+  margin-bottom: 10px;
+}
+#regForm h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: none;
+  font-weight: bold;
+  font-size: 2em;
+  color: rgb(88, 88, 88);
+}
+
+/* LOG-FORM */
+#logForm {
+  display: flex;
+  justify-content: center;
+  margin: 15vh;
+}
+#logForm form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px;
+}
+#logForm input {
+  width: 350px;
+  padding: 15px;
+  margin: 12px;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 6px;
+}
+#logForm input::-moz-placeholder {
+  font-size: 1.2em;
+}
+#logForm input:-ms-input-placeholder {
+  font-size: 1.2em;
+}
+#logForm input::placeholder {
+  font-size: 1.2em;
+}
+#logForm #btn-log {
+  width: 383px;
+  padding: 12px;
+  margin: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(2, 19, 252);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 6px;
+}
+#logForm #btn-log:hover {
+  background-color: rgb(3, 0, 197);
+}
+#logForm .logFormStyl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0px 5px 10px 0 rgb(151, 150, 150);
+  opacity: 0.6;
+  background-color: #fff;
+  border-radius: 9px;
+}
+#logForm .logFormStyl i {
+  align-self: self-end;
+  cursor: pointer;
+  color: rgb(145, 144, 144);
+}
+#logForm .logFormStyl a {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+  color: white;
+  background-color: rgb(33, 167, 21);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#logForm .logFormStyl a:hover {
+  background-color: rgb(34, 150, 24);
+}
+#logForm .logFormStyl #infoMdp {
+  color: blue;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+#logForm .logFormStyl #infoMdp:hover {
+  text-decoration: underline;
+}
+#logForm h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: none;
+  font-weight: bold;
+  font-size: 2em;
+  color: rgb(88, 88, 88);
+}
+#logForm #msg-warning {
+  color: rgb(231, 71, 71);
+}
+#logForm p {
+  color: rgb(104, 104, 104);
+}
+#logForm #regBorder {
+  border-bottom: 1px solid rgb(190, 190, 190);
+  width: 380px;
+  margin-bottom: 10px;
+}
+
+/* HOME */
+.grandCont .panelCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
+  padding: 15px;
+  height: 40px;
+}
+.grandCont .panelCont h1 {
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+.grandCont .panelCont h1 span {
+  color: rgb(136, 136, 136);
+}
+.grandCont .panelCont .iconsCont i {
+  margin-right: 50px;
+  font-size: 1.5em;
+  padding: 23px;
+  color: rgb(124, 124, 124);
+  cursor: pointer;
+}
+.grandCont .panelCont .rightIconBlock .btn-logout {
+  padding: 15px;
+  color: white;
+  background-color: rgba(226, 23, 23, 0.849);
+  margin: 10px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.grandCont .panelCont .rightIconBlock .btn-logout:hover {
+  filter: brightness(1.2);
+}
+.grandCont .bodyCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.grandCont .bodyCont .panelSearch #search2 {
+  border: none;
+  outline: none;
+  margin-bottom: -50px;
+}
+.grandCont .bodyCont .panelSearch #back_result2 {
+  padding: 10px;
+  width: 270px;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px 0 gray;
+  display: none;
+  overflow: scroll;
+  height: 200px;
+  position: fixed;
+  background-color: #fff;
+}
+.grandCont .bodyCont .panelSearch #pic {
+  vertical-align: middle;
+}
+.grandCont .bodyCont .panelSearch #user {
+  margin: 5px;
+}
+.grandCont .bodyCont .panelSearch #user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grandCont .bodyCont .panelSearch form {
+  display: none;
+  margin: 20px;
+}
+.grandCont .bodyCont .panelSearch form input {
+  font-family: "FontAwesome";
+  background-image: url(/img/search.png);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+.grandCont .bodyCont .panelSearch form input::-moz-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .panelSearch form input:-ms-input-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .panelSearch form input::placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .panelSearch form input:focus {
+  background-position: -20px center;
+  text-indent: 0;
+}
+.grandCont .bodyCont .firstCont {
+  width: 300px;
+  cursor: pointer;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+.grandCont .bodyCont .firstCont:hover {
+  filter: brightness(0.95);
+}
+.grandCont .bodyCont .firstCont .userCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px 0 rgb(201, 201, 201);
+}
+.grandCont .bodyCont .firstCont .userCont img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.grandCont .bodyCont .firstCont .userCont .btn {
+  padding: 15px;
+  color: white;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+.grandCont .bodyCont .firstCont .userCont .btn:hover {
+  filter: brightness(1.1);
+}
+.grandCont .bodyCont .firstCont .userCont .btn-edit {
+  background-color: rgb(23, 172, 85);
+}
+.grandCont .bodyCont .secondCont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: -webkit-fill-available;
+}
+.grandCont .bodyCont .secondCont .secondContWrap {
+  display: flex;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 3px 8px 0 rgb(218, 218, 218);
+  width: 550px;
+  border-radius: 9px;
+  margin: 15px;
+  cursor: pointer;
+}
+.grandCont .bodyCont .secondCont .secondContWrap:hover {
+  background-color: rgb(235, 235, 235);
+}
+.grandCont .bodyCont .secondCont i {
+  border-radius: 50%;
+  padding: 15px;
+  background-color: rgb(217, 227, 250);
+  margin-right: 10px;
+  margin-left: 20px;
+  color: rgb(9, 105, 250);
+  cursor: pointer;
+}
+.grandCont .bodyCont .secondCont i:hover {
+  filter: brightness(0.9);
+}
+.grandCont .bodyCont .secondCont h4 {
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+.grandCont .bodyCont .secondCont .messageCont {
+  display: flex;
+  justify-content: center;
+}
+.grandCont .bodyCont .secondCont .messageCont .backMessage {
+  width: 530px;
+  height: 500px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 6px 0 rgb(201, 201, 201);
+  overflow: auto;
+}
+.grandCont .bodyCont .secondCont .messageCont .card-body {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding: 15px;
+  width: 350px;
+}
+.grandCont .bodyCont .secondCont .messageCont .card-body .btn-delete {
+  border: none;
+  color: red;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 50%;
+}
+.grandCont .bodyCont .secondCont .messageCont .card-body .btn-delete:hover {
+  filter: brightness(1.2);
+  background-color: rgb(197, 197, 197);
+}
+.grandCont .bodyCont .thirdCont {
+  margin: 20px;
+}
+.grandCont .bodyCont .thirdCont form input {
+  font-family: "FontAwesome";
+  background-image: url(/img/search.png);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 350px;
+}
+.grandCont .bodyCont .thirdCont form input::-moz-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .thirdCont form input:-ms-input-placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .thirdCont form input::placeholder {
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.grandCont .bodyCont .thirdCont form input:focus {
+  background-position: -20px center;
+  text-indent: 0;
+}
+.grandCont .bodyCont .thirdCont i {
+  display: none;
+  color: rgb(109, 109, 109);
+  font-size: 1.7em;
+  margin-right: 50px;
+}
+.grandCont .bodyCont .thirdCont #search {
+  border: none;
+  outline: none;
+  margin-bottom: -0.5px;
+  width: 280px;
+  font-size: 1em;
+}
+.grandCont .bodyCont .thirdCont #back_result {
+  padding: 10px;
+  width: 260px;
+  margin: 0 auto;
+  border-top: 5px solid rgb(226, 226, 226);
+  display: none;
+  height: 500px;
+  overflow: scroll;
+  border-radius: 0px 0px 10px 10px;
+  position: fixed;
+  background-color: #fff;
+}
+.grandCont .bodyCont .thirdCont #pic {
+  vertical-align: middle;
+}
+.grandCont .bodyCont .thirdCont #user {
+  margin: 5px;
+}
+.grandCont .bodyCont .thirdCont #user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .btn-primary {
+  color: rgb(51, 129, 245);
+  border-radius: 9px;
+  font-size: 1.5em;
+}
+.row .btn-primary:hover {
+  filter: brightness(1.2);
+}
+.row .infoTitles {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  width: 800px;
+}
+.row .actionBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .actionBlock div {
+  margin-right: 240px;
+  container-type: inline-size;
+}
+.row .actionBlock .actions {
+  display: flex;
+}
+.row .actionBlock .actions .fa-trash {
+  color: rgb(255, 137, 137);
+}
+.row .actionBlock .actions a {
+  margin-right: 10px;
+  padding: 10px;
+  color: rgb(51, 129, 245);
+  border-radius: 9px;
+  font-size: 1.3em;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 10px 4px 8px 8px rgb(218, 218, 218);
+}
+.footer .footerPanel .footerCont {
+  background-color: rgb(248, 248, 248);
+  padding: 15px;
+  height: 40px;
+}
+.footer .footerPanel .footerCont h6 {
+  margin: 10px;
+  color: rgb(88, 88, 88);
+  font-weight: lighter;
+}
+.footer .footerPanel .footerCont h6 span {
+  color: rgb(136, 136, 136);
+}
+
+/* RESPONSIVE */
+/* NAV-BAR */
+@media screen and (max-width: 1600px) {
+  .globalCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh;
+  }
+}
+@media screen and (max-width: 912px) {
+  .globalCont .logoCont p {
+    font-size: 1.2em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 4vh;
+  }
+}
+@media screen and (max-width: 618px) {
+  .globalCont .logoCont p {
+    font-size: 1em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 4vh;
+  }
+}
+@media screen and (max-width: 568px) {
+  .globalCont .logoCont p {
+    font-size: 0.8em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 2vh;
+  }
+}
+@media screen and (max-width: 368px) {
+  .globalCont .logoCont p {
+    font-size: 0.8em;
+  }
+  .globalCont .homeCont {
+    display: flex;
+    justify-content: center;
+  }
+  .globalCont .homeCont .navBar {
+    padding: 1vh;
+  }
+}
+/* LOGIN */
+@media screen and (max-width: 468px) {
+  #logForm .logFormStyl {
+    padding: 10px;
+    width: 300px;
+  }
+  #logForm input {
+    width: 200px;
+    align-self: center;
+  }
+  #logForm #btn-log {
+    width: 233px;
+  }
+  #logForm #regBorder {
+    width: 233px;
+  }
+}
+/* REGISTER */
+@media screen and (max-width: 468px) {
+  #regForm .regFormStyl {
+    padding: 10px;
+    width: 300px;
+  }
+  #regForm .regFormStyl #regBorder {
+    width: 233px;
+  }
+  #regForm input {
+    width: 200px;
+    align-self: center;
+  }
+  #regForm #btn-reg {
+    width: 233px;
+  }
+}
+/* HOME - ACCUEIL */
+@media screen and (max-width: 1128px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 948px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grandCont .panelCont i {
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 848px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 350px;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 718px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: block;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    width: 250px;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap .storyInfo p {
+    font-size: 0.7em;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 10px;
+    padding: 23px;
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 686px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .iconsCont .fa-gear {
+    display: none;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: -35px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    display: flex;
+    align-items: baseline;
+    width: 220px;
+    padding: 10px;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap .storyInfo p {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont i {
+    margin-left: 0;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 470px) {
+  .grandCont .panelCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .grandCont .panelCont .iconsCont {
+    margin-left: 150px;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .iconsCont .fa-home {
+    display: none;
+  }
+  .grandCont .panelCont .iconsCont .fa-bell {
+    display: none;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: -35px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap {
+    display: none;
+  }
+  .grandCont .bodyCont .secondCont .secondContWrap .storyInfo p {
+    display: none;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 5px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .footer .panelContFooter .rightIconBlock i {
+    margin-right: -15px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: -35px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .panelCont h1 {
+    margin: 0;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grandCont .bodyCont .panelSearch form {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont form {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .firstCont {
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+  .grandCont .bodyCont .firstCont .personalCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .footer .panelContFooter h1 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 412px) {
+  .grandCont .panelCont .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .grandCont .panelCont .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .grandCont .panelCont .rightIconBlock {
+    margin-left: 0px;
+  }
+  .grandCont .panelCont .rightIconBlock i {
+    display: none;
+  }
+  .grandCont .panelCont h1 {
+    margin: 0;
+  }
+  .grandCont .bodyCont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .grandCont .bodyCont .panelSearch form {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont form {
+    display: none;
+  }
+  .grandCont .bodyCont .thirdCont form input {
+    display: block;
+  }
+  .grandCont .bodyCont .thirdCont i {
+    display: none;
+  }
+  .grandCont .bodyCont .firstCont {
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
+  .grandCont .bodyCont .firstCont .personalCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grandCont .bodyCont .firstCont .personalCont .nameMail p {
+    display: block;
+    text-align: center;
+  }
+  .footer .panelContFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .panelContFooter .iconsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .panelContFooter .iconsCont i {
+    margin-right: 0px;
+    padding: 23px;
+    font-size: 1.2em;
+  }
+  .footer .panelContFooter h1 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .footer .rightIconBlock i {
+    margin-right: 0px;
+  }
+}/*# sourceMappingURL=index.css.map */

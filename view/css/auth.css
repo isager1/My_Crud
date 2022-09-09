@@ -1,0 +1,16 @@
+.btns-auth {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+   text-decoration: none;
+    text-align: center;
+    margin: 15px;
+}
+
+
+.home-btn {
+    background-color: white;
+    color: black;
+}
