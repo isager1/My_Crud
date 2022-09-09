@@ -37,26 +37,24 @@ $user = getUserById($_SESSION['id'], $conn);
 
         </div>
 
-        <div class="bodyCont">
-            <div class="panelSearch">
+        <div class="bodyCont">            
+            <div class="firstCont">
+                <?php if ($user) { ?>
+                    <div class="userCont">
+                        <img src="../upload/<?=$user['avatar']?>">
+                        <h3 class="display-4 "><?=$user['fullname']?></h3>
+                        <a href="edit.php" class="btn btn-edit">Editer profil</a>
+                </div>
+                <?php }else { 
+                header("Location: login.php");
+                exit;
+                } ?>
+                 <div class="panelSearch">
                 <form action="s" method="POST">
                     <input type="search" name="search2" id="search2" placeholder="Rechercher sur teptar">
                 </form>
                 <div id="back_result2"></div>
             </div>
-            
-            <div class="firstCont">
-            <?php if ($user) { ?>
-                <div class="userCont">
-    		        <img src="../upload/<?=$user['avatar']?>">
-                    <h3 class="display-4 "><?=$user['fullname']?></h3>
-                    <a href="edit.php" class="btn btn-edit">Editer profil</a>
-            </div>
-            <?php }else { 
-            header("Location: login.php");
-            exit;
-            } ?>
-
             </div>
             <div class="secondCont">
                 <div class="secondContWrap">

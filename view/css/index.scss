@@ -339,6 +339,11 @@ h1 {
         box-shadow: 0 4px 8px 0 rgb(218, 218, 218);
         padding: 15px;
         height: 40px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    
 
         h1 {
             margin: 10px;
@@ -366,7 +371,7 @@ h1 {
                 padding: 15px;
                 color: white;
                 background-color: rgba(226, 23, 23, 0.849);
-                margin: 10px;
+                margin: 30px;
                 width: 100px;
                 text-align: center;
                 font-weight: bold;
@@ -384,6 +389,7 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        margin: 10vh;
 
 
         .panelSearch {
@@ -930,6 +936,18 @@ h1 {
         }
 
         .bodyCont {
+
+
+
+            .panelSearch {
+                display: flex;
+                
+            }
+
+            .firstCont {
+                margin: 15px;
+            }
+
             .thirdCont {
                 form {
                     input {
@@ -944,7 +962,7 @@ h1 {
 
             .secondCont {
                 .secondContWrap {
-                    width: 450px;
+                    width: 550px;
                 }
             }
         }
@@ -987,6 +1005,10 @@ h1 {
                 .secondContWrap {
                     width: 450px;
                 }
+
+                .messageCont {
+                    width: 450px;
+                }
             }
         }
     }
@@ -1019,31 +1041,16 @@ h1 {
                     }
                 }
 
-                i {
-                    display: block;
-                }
+        
             }
 
             .secondCont {
                 .secondContWrap {
                     width: 350px;
                 }
-            }
-        }
-    }
 
-
-    .footer {
-        .panelContFooter {
-            .iconsCont {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-
-                i {
-                    margin-right: 10px;
-                    padding: 23px;
-                    font-size: 1.4em;
+                .messageCont {
+                    width: 350px;
                 }
             }
         }
@@ -1091,21 +1098,8 @@ h1 {
                         }
                     }
                 }
-            }
-        }
-    }
-
-    .footer {
-        .panelContFooter {
-            .iconsCont {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-
-                i {
-                    margin-right: 10px;
-                    padding: 23px;
-                    font-size: 1.4em;
+                .messageCont {
+                    width: 250px;
                 }
             }
         }
@@ -1194,22 +1188,6 @@ h1 {
             }
         }
     }
-
-    .footer {
-        .panelContFooter {
-            .iconsCont {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-
-                i {
-                    margin-right: 5px;
-                    padding: 23px;
-                    font-size: 1.2em;
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 470px) {
@@ -1218,28 +1196,11 @@ h1 {
         .panelCont {
             display: flex;
             align-items: center;
-            justify-content: space-between;
 
             .iconsCont {
-                margin-left: 150px;
-
-                i {
-                    margin-right: 5px;
-                    padding: 23px;
-                    font-size: 1.2em;
-                }
-
-                .fa-home {
-                    display: none;
-                }
-
-                .fa-bell {
-                    display: none;
-                }
+         
             }
-
             .rightIconBlock {
-                margin-left: -35px;
 
                 i {
                     display: none;
@@ -1248,6 +1209,7 @@ h1 {
         }
 
         .bodyCont {
+            margin: 10vh 0;
             display: flex;
             align-items: baseline;
             flex-wrap: wrap;
@@ -1267,13 +1229,16 @@ h1 {
             .secondCont {
 
                 .secondContWrap {
-                    display: none;
+                    width: 300px;
 
                     .storyInfo {
                         p {
                             display: none;
                         }
                     }
+                }
+                .messageCont {
+                    width: 320px;
                 }
 
                 h4 {}
@@ -1289,33 +1254,6 @@ h1 {
                     }
                 }
 
-            }
-        }
-    }
-
-    .footer {
-        .panelContFooter {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .iconsCont {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-
-
-                i {
-                    margin-right: 5px;
-                    padding: 23px;
-                    font-size: 1.2em;
-                }
-            }
-
-            .rightIconBlock {
-                i {
-                    margin-right: -15px;
-                }
             }
         }
     }
@@ -1338,17 +1276,7 @@ h1 {
                 }
             }
 
-            .rightIconBlock {
-                margin-left: -35px;
-
-                i {
-                    display: none;
-                }
-            }
-
-            h1 {
-                margin: 0;
-            }
+       
         }
 
         .bodyCont {
@@ -1395,31 +1323,6 @@ h1 {
                     }
                 }
 
-            }
-        }
-    }
-
-    .footer {
-        .panelContFooter {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .iconsCont {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-
-                i {
-                    margin-right: 0px;
-                    padding: 23px;
-                    font-size: 1.2em;
-                }
-            }
-
-            h1 {
-                margin: 0;
-                font-size: 1.3em;
             }
         }
     }
@@ -1499,37 +1402,6 @@ h1 {
                     }
                 }
 
-            }
-        }
-    }
-
-    .footer {
-        .panelContFooter {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .iconsCont {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-
-                i {
-                    margin-right: 0px;
-                    padding: 23px;
-                    font-size: 1.2em;
-                }
-            }
-
-            h1 {
-                margin: 0;
-                font-size: 1.3em;
-            }
-        }
-
-        .rightIconBlock {
-            i {
-                margin-right: 0px;
             }
         }
     }
